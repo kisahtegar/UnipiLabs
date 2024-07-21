@@ -1,0 +1,46 @@
+C:\Try\INVENTORY\bin\INVENTORY.dll
+C:\Try\INVENTORY\bin\INVENTORY.pdb
+C:\Try\INVENTORY\bin\INVENTORY.xml
+C:\Try\INVENTORY\obj\Debug\ResolveAssemblyReference.cache
+C:\Try\INVENTORY\obj\Debug\INVENTORY.Resources.resources
+C:\Try\INVENTORY\obj\Debug\INVENTORY.vbproj.GenerateResource.Cache
+C:\Try\INVENTORY\obj\Debug\INVENTORY.dll
+C:\Try\INVENTORY\obj\Debug\INVENTORY.xml
+C:\Try\INVENTORY\obj\Debug\INVENTORY.pdb
+C:\Try\INVENTORY\bin\SlimeeLibrary.dll
+C:\Activities\Campus\INSAN PEMBANGUNAN\MODULE\VB NET 2 (ASP)\MATERI\2008\INVENTORY\bin\INVENTORY.dll
+C:\Activities\Campus\INSAN PEMBANGUNAN\MODULE\VB NET 2 (ASP)\MATERI\2008\INVENTORY\bin\INVENTORY.pdb
+C:\Activities\Campus\INSAN PEMBANGUNAN\MODULE\VB NET 2 (ASP)\MATERI\2008\INVENTORY\bin\INVENTORY.xml
+C:\Activities\Campus\INSAN PEMBANGUNAN\MODULE\VB NET 2 (ASP)\MATERI\2008\INVENTORY\obj\Debug\ResolveAssemblyReference.cache
+C:\Activities\Campus\INSAN PEMBANGUNAN\MODULE\VB NET 2 (ASP)\MATERI\2008\INVENTORY\obj\Debug\INVENTORY.Resources.resources
+C:\Activities\Campus\INSAN PEMBANGUNAN\MODULE\VB NET 2 (ASP)\MATERI\2008\INVENTORY\obj\Debug\INVENTORY.vbproj.GenerateResource.Cache
+C:\Activities\Campus\INSAN PEMBANGUNAN\MODULE\VB NET 2 (ASP)\MATERI\2008\INVENTORY\obj\Debug\INVENTORY.dll
+C:\Activities\Campus\INSAN PEMBANGUNAN\MODULE\VB NET 2 (ASP)\MATERI\2008\INVENTORY\obj\Debug\INVENTORY.xml
+C:\Activities\Campus\INSAN PEMBANGUNAN\MODULE\VB NET 2 (ASP)\MATERI\2008\INVENTORY\obj\Debug\INVENTORY.pdb
+C:\Activities\Campus\INSAN PEMBANGUNAN\MODULE\VB NET 2 (ASP)\MATERI\2008\BLANK\INVENTORY\bin\INVENTORY.dll
+C:\Activities\Campus\INSAN PEMBANGUNAN\MODULE\VB NET 2 (ASP)\MATERI\2008\BLANK\INVENTORY\bin\INVENTORY.pdb
+C:\Activities\Campus\INSAN PEMBANGUNAN\MODULE\VB NET 2 (ASP)\MATERI\2008\BLANK\INVENTORY\bin\INVENTORY.xml
+C:\Activities\Campus\INSAN PEMBANGUNAN\MODULE\VB NET 2 (ASP)\MATERI\2008\BLANK\INVENTORY\obj\Debug\ResolveAssemblyReference.cache
+C:\Activities\Campus\INSAN PEMBANGUNAN\MODULE\VB NET 2 (ASP)\MATERI\2008\BLANK\INVENTORY\obj\Debug\INVENTORY.Resources.resources
+C:\Activities\Campus\INSAN PEMBANGUNAN\MODULE\VB NET 2 (ASP)\MATERI\2008\BLANK\INVENTORY\obj\Debug\INVENTORY.vbproj.GenerateResource.Cache
+C:\Activities\Campus\INSAN PEMBANGUNAN\MODULE\VB NET 2 (ASP)\MATERI\2008\BLANK\INVENTORY\obj\Debug\INVENTORY.dll
+C:\Activities\Campus\INSAN PEMBANGUNAN\MODULE\VB NET 2 (ASP)\MATERI\2008\BLANK\INVENTORY\obj\Debug\INVENTORY.xml
+C:\Activities\Campus\INSAN PEMBANGUNAN\MODULE\VB NET 2 (ASP)\MATERI\2008\BLANK\INVENTORY\obj\Debug\INVENTORY.pdb
+C:\Dev\Projects\Kampus\INVENTORY\bin\INVENTORY.dll
+C:\Dev\Projects\Kampus\INVENTORY\bin\INVENTORY.pdb
+C:\Dev\Projects\Kampus\INVENTORY\bin\INVENTORY.xml
+C:\Dev\Projects\Kampus\INVENTORY\obj\Debug\ResolveAssemblyReference.cache
+C:\Dev\Projects\Kampus\INVENTORY\obj\Debug\INVENTORY.Resources.resources
+C:\Dev\Projects\Kampus\INVENTORY\obj\Debug\INVENTORY.vbproj.GenerateResource.Cache
+C:\Dev\Projects\Kampus\INVENTORY\obj\Debug\INVENTORY.dll
+C:\Dev\Projects\Kampus\INVENTORY\obj\Debug\INVENTORY.xml
+C:\Dev\Projects\Kampus\INVENTORY\obj\Debug\INVENTORY.pdb
+C:\Dev\Projects\Kampus\kisahtegar_vb\INVENTORY\bin\INVENTORY.dll
+C:\Dev\Projects\Kampus\kisahtegar_vb\INVENTORY\bin\INVENTORY.pdb
+C:\Dev\Projects\Kampus\kisahtegar_vb\INVENTORY\bin\INVENTORY.xml
+C:\Dev\Projects\Kampus\kisahtegar_vb\INVENTORY\obj\Debug\ResolveAssemblyReference.cache
+C:\Dev\Projects\Kampus\kisahtegar_vb\INVENTORY\obj\Debug\INVENTORY.Resources.resources
+C:\Dev\Projects\Kampus\kisahtegar_vb\INVENTORY\obj\Debug\INVENTORY.vbproj.GenerateResource.Cache
+C:\Dev\Projects\Kampus\kisahtegar_vb\INVENTORY\obj\Debug\INVENTORY.dll
+C:\Dev\Projects\Kampus\kisahtegar_vb\INVENTORY\obj\Debug\INVENTORY.xml
+C:\Dev\Projects\Kampus\kisahtegar_vb\INVENTORY\obj\Debug\INVENTORY.pdb

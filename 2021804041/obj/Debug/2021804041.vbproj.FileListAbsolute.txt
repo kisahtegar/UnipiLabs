@@ -1,0 +1,9 @@
+C:\Dev\Projects\Kampus\kisahtegar_vb\2021804041\bin\2021804041.dll
+C:\Dev\Projects\Kampus\kisahtegar_vb\2021804041\bin\2021804041.pdb
+C:\Dev\Projects\Kampus\kisahtegar_vb\2021804041\bin\2021804041.xml
+C:\Dev\Projects\Kampus\kisahtegar_vb\2021804041\obj\Debug\ResolveAssemblyReference.cache
+C:\Dev\Projects\Kampus\kisahtegar_vb\2021804041\obj\Debug\_2021804041.Resources.resources
+C:\Dev\Projects\Kampus\kisahtegar_vb\2021804041\obj\Debug\2021804041.vbproj.GenerateResource.Cache
+C:\Dev\Projects\Kampus\kisahtegar_vb\2021804041\obj\Debug\2021804041.dll
+C:\Dev\Projects\Kampus\kisahtegar_vb\2021804041\obj\Debug\2021804041.xml
+C:\Dev\Projects\Kampus\kisahtegar_vb\2021804041\obj\Debug\2021804041.pdb

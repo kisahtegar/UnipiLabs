@@ -1,0 +1,66 @@
+﻿.container 
+{
+    width: 1000px;
+    height: 569px;
+    margin: auto;
+    background: white;
+    border: 1px solid #000;
+}
+.header 
+{
+    height: 50px;
+    background: #836953;
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+    color: white;
+}
+.sidebar 
+{
+    width: 200px;
+    height: 500px;
+    float: left;
+    background: #BA8759;
+    padding: 10px;
+}
+.content 
+{
+    width: 760px;
+    height: 500px;
+    float: right;
+    background: #C2B280;
+    padding: 10px;
+}
+.menu-item 
+{
+    margin: 10px 0;
+    color: black;
+    font-size: 18px;
+}
+.menu-item 
+{
+    margin: 10px 0;
+    color: white;
+    font-size: 18px;
+    height: 50px;
+    line-height: 50px;
+    white-space: nowrap;
+}
+.menu-item a 
+{
+    display: block;
+    color: white;
+    text-decoration: none;
+    height: 100%;
+}
+.menu-item img 
+{
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+.menu-item span 
+{
+    vertical-align: middle;
+}

@@ -1,0 +1,63 @@
+﻿body {
+    background-color: #c9d6ff;
+    background: #e2e2e2; /* Fallback color */
+    background: -webkit-gradient(linear, left top, right top, from(#e2e2e2), to(#c9d6ff)); /* For Safari 5.1 to 6.0 */
+    background: -webkit-linear-gradient(to right, #e2e2e2, #c9d6ff); /* For Chrome 10-25, Safari 5.1 to 6.0 */
+    background: linear-gradient(to right, #e2e2e2, #c9d6ff); /* Standard syntax */
+    text-align: center;
+}
+
+.container {
+    width: 400px;
+    height: 300px;
+    margin: auto;
+    background: white;
+    border: 1px solid #ccc;
+}
+
+.container span {
+    font-size: 12px;
+    display: block; /* Ensure each span takes its own line */
+    margin-bottom: 5px; /* Add some space below each label */
+}
+
+.container form {
+    background-color: #fff;
+    display: block; /* Changed to block */
+    text-align: center; /* Center the content */
+    padding: 0 40px;
+}
+
+.input {
+    background-color: #eee;
+    border: none;
+    margin: 8px 0;
+    padding: 10px 15px;
+    font-size: 13px;
+    width: 65%; /* Adjust width to consider padding */
+    outline: none;
+    display: inline-block;
+}
+
+.btn {
+    background-color: #512da8;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: pointer;
+
+}
+
+.form-container {
+    width: 100%;
+    display: inline-block;
+}
+
+.sign-in {
+    width: 100%; /* Full width of the container */
+}

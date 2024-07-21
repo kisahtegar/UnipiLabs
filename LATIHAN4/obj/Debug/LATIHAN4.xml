@@ -1,0 +1,67 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+LATIHAN4
+</name>
+</assembly>
+<members>
+<member name="F:LATIHAN4._Default.form2">
+	<summary>
+form2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LATIHAN4._Default.txtNIK">
+	<summary>
+txtNIK control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LATIHAN4._Default.txtGAPOK">
+	<summary>
+txtGAPOK control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LATIHAN4._Default.txtTUNJANGAN">
+	<summary>
+txtTUNJANGAN control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LATIHAN4._Default.txtPOTONGAN">
+	<summary>
+txtPOTONGAN control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LATIHAN4._Default.txtGABER">
+	<summary>
+txtGABER control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:LATIHAN4._Default.btnHITUNG">
+	<summary>
+btnHITUNG control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+</members>
+</doc>

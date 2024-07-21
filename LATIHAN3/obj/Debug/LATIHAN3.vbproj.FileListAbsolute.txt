@@ -1,0 +1,9 @@
+C:\Aldiyudha\LATIHAN3\bin\LATIHAN3.dll
+C:\Aldiyudha\LATIHAN3\bin\LATIHAN3.pdb
+C:\Aldiyudha\LATIHAN3\bin\LATIHAN3.xml
+C:\Aldiyudha\LATIHAN3\obj\Debug\ResolveAssemblyReference.cache
+C:\Aldiyudha\LATIHAN3\obj\Debug\LATIHAN3.Resources.resources
+C:\Aldiyudha\LATIHAN3\obj\Debug\LATIHAN3.vbproj.GenerateResource.Cache
+C:\Aldiyudha\LATIHAN3\obj\Debug\LATIHAN3.dll
+C:\Aldiyudha\LATIHAN3\obj\Debug\LATIHAN3.xml
+C:\Aldiyudha\LATIHAN3\obj\Debug\LATIHAN3.pdb

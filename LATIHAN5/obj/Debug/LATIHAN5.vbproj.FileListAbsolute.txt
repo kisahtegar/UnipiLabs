@@ -1,0 +1,9 @@
+C:\Dev\Projects\Kampus\kisahtegar_vb\LATIHAN5\bin\LATIHAN5.dll
+C:\Dev\Projects\Kampus\kisahtegar_vb\LATIHAN5\bin\LATIHAN5.pdb
+C:\Dev\Projects\Kampus\kisahtegar_vb\LATIHAN5\bin\LATIHAN5.xml
+C:\Dev\Projects\Kampus\kisahtegar_vb\LATIHAN5\obj\Debug\ResolveAssemblyReference.cache
+C:\Dev\Projects\Kampus\kisahtegar_vb\LATIHAN5\obj\Debug\LATIHAN5.Resources.resources
+C:\Dev\Projects\Kampus\kisahtegar_vb\LATIHAN5\obj\Debug\LATIHAN5.vbproj.GenerateResource.Cache
+C:\Dev\Projects\Kampus\kisahtegar_vb\LATIHAN5\obj\Debug\LATIHAN5.dll
+C:\Dev\Projects\Kampus\kisahtegar_vb\LATIHAN5\obj\Debug\LATIHAN5.xml
+C:\Dev\Projects\Kampus\kisahtegar_vb\LATIHAN5\obj\Debug\LATIHAN5.pdb
