@@ -1,13 +1,10 @@
-# UNIPI Code Labs
+# Android Java
 
 This repository used for learning and testing:
 
-| Project Name                  | UnipiLabs                      |
+| Project Name                  | Android Java                   |
 |-------------------------------|--------------------------------|
-| Target & Minimum Target SDK   | Phone and Tablet, API level 21 |
-| Tipe Activity                 | Empty Views Activity           |
-| Activity Name                 | MainActivity                   |
-| Language                      | Kotlin                         |
-| Build Configuration Language  | Kotlin DSL                     |
+| Language                      | Java                           |
+| Editor                        | Eclipse                        |
 
 [//]: # (<img src="preview_1.png" alt="Preview 1" width="411" height="914">)

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Project Kondisi</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    
+    <string name="nilai_uas">Nilai UAS</string>
+    <string name="nilai_uts">Nilai UTS</string>
+    <string name="nilai_tugas">Nilai Tugas</string>
+    <string name="btn_check">Check</string>
+    <string name="tv_hasil">Hasil</string>
+
+</resources>

@@ -1,0 +1,232 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+    
+    <EditText
+        android:id="@+id/etInputBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnClearAll"
+        android:layout_alignLeft="@+id/btnClearAll"
+        android:layout_alignRight="@+id/btnDivide"
+        android:layout_marginBottom="32dp"
+        android:textSize="25sp"
+        android:textColor="#000000"
+        android:ems="10"
+        android:enabled="false" >
+
+        <requestFocus />
+    </EditText>
+
+    <!-- First Layer -->
+    <Button
+        android:id="@+id/btnDoubleZero"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="72dp"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="@string/sym_double_zero"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnZero"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="72dp"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/btnDoubleZero"
+        android:text="@string/sym_zero"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnComma"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="72dp"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/btnZero"
+        android:text="@string/sym_comma"
+        android:textSize="20sp" />
+    
+    <Button
+        android:id="@+id/btnEqual"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="72dp"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/btnComma"
+        android:text="@string/sym_equal"
+        android:textSize="20sp" />
+
+    <!-- Second Layer -->
+    <Button
+        android:id="@+id/btnOne"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="72dp"
+        android:layout_height="65dp"
+        android:layout_above="@+id/btnDoubleZero"
+        android:layout_alignParentLeft="true"
+        android:text="@string/sym_one"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnTwo"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="72dp"
+        android:layout_height="65dp"
+        android:layout_above="@+id/btnZero"
+        android:layout_toRightOf="@+id/btnOne"
+        android:text="@string/sym_two"
+        android:textSize="20sp" />
+    
+    <Button
+        android:id="@+id/btnThree"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="72dp"
+        android:layout_height="65dp"
+        android:layout_above="@+id/btnComma"
+        android:layout_toRightOf="@+id/btnTwo"
+        android:text="@string/sym_three"
+        android:textSize="20sp" />
+    
+    <Button
+        android:id="@+id/btnPlus"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="72dp"
+        android:layout_height="65dp"
+        android:layout_above="@+id/btnEqual"
+        android:layout_toRightOf="@+id/btnThree"
+        android:text="@string/sym_plus"
+        android:textSize="20sp" />
+    
+    <!-- Third Layer -->
+    <Button
+        android:id="@+id/btnFour"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="72dp"
+        android:layout_height="65dp"
+        android:layout_above="@+id/btnOne"
+        android:layout_alignParentLeft="true"
+        android:text="@string/sym_four"
+        android:textSize="20sp" />
+    
+    <Button
+        android:id="@+id/btnFive"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="72dp"
+        android:layout_height="65dp"
+        android:layout_above="@+id/btnTwo"
+        android:layout_toRightOf="@+id/btnFour"
+        android:text="@string/sym_five"
+        android:textSize="20sp" />
+    
+    <Button
+        android:id="@+id/btnSix"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="72dp"
+        android:layout_height="65dp"
+        android:layout_above="@+id/btnThree"
+        android:layout_toRightOf="@+id/btnFive"
+        android:text="@string/sym_six"
+        android:textSize="20sp" />
+    
+    <Button
+        android:id="@+id/btnMinus"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="72dp"
+        android:layout_height="65dp"
+        android:layout_above="@+id/btnPlus"
+        android:layout_toRightOf="@+id/btnSix"
+        android:text="@string/sym_minus"
+        android:textSize="20sp" />
+    
+    <!-- Fourth Layer -->
+    <Button
+        android:id="@+id/btnSeven"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="72dp"
+        android:layout_height="65dp"
+        android:layout_above="@+id/btnFour"
+        android:layout_alignParentLeft="true"
+        android:text="@string/sym_seven"
+        android:textSize="20sp" />
+    
+    <Button
+        android:id="@+id/btnEight"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="72dp"
+        android:layout_height="65dp"
+        android:layout_above="@+id/btnFive"
+        android:layout_toRightOf="@+id/btnSeven"
+        android:text="@string/sym_eight"
+        android:textSize="20sp" />
+    
+    <Button
+        android:id="@+id/btnNine"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="72dp"
+        android:layout_height="65dp"
+        android:layout_above="@+id/btnSix"
+        android:layout_toRightOf="@+id/btnEight"
+        android:text="@string/sym_nine"
+        android:textSize="20sp" />
+    
+    <Button
+        android:id="@+id/btnMultiple"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="72dp"
+        android:layout_height="65dp"
+        android:layout_above="@+id/btnMinus"
+        android:layout_toRightOf="@+id/btnNine"
+        android:text="@string/sym_multiple"
+        android:textSize="20sp" />
+    
+    <!-- Five Layer -->
+    <Button
+        android:id="@+id/btnClearAll"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="72dp"
+        android:layout_height="65dp"
+        android:layout_above="@+id/btnSeven"
+        android:layout_alignParentLeft="true"
+        android:text="@string/sym_ac"
+        android:textSize="20sp" />
+    
+    <Button
+        android:id="@+id/btnPercent"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="72dp"
+        android:layout_height="65dp"
+        android:layout_above="@+id/btnEight"
+        android:layout_toRightOf="@+id/btnClearAll"
+        android:text="@string/sym_percent"
+        android:textSize="20sp" />
+    
+    <Button
+        android:id="@+id/btnDelete"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="72dp"
+        android:layout_height="65dp"
+        android:layout_above="@+id/btnNine"
+        android:layout_toRightOf="@+id/btnPercent"
+        android:text="@string/sym_del"
+        android:textSize="20sp" />
+    
+    <Button
+        android:id="@+id/btnDivide"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="72dp"
+        android:layout_height="65dp"
+        android:layout_above="@+id/btnMultiple"
+        android:layout_toRightOf="@+id/btnDelete"
+        android:text="@string/sym_divide"
+        android:textSize="20sp" />
+
+</RelativeLayout>

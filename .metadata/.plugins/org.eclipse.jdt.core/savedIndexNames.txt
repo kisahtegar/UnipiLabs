@@ -1,0 +1,18 @@
+INDEX VERSION 1.126+C:\Dev\Projects\Kampus\mp_java_si6\.metadata\.plugins\org.eclipse.jdt.core
+1895455177.index
+3486175056.index
+2831283357.index
+1061808388.index
+735112143.index
+2264315150.index
+2315961143.index
+3305124108.index
+1911719222.index
+1642997406.index
+3080640460.index
+1892175687.index
+1287763976.index
+2352894599.index
+844238061.index
+531515325.index
+461950819.index
