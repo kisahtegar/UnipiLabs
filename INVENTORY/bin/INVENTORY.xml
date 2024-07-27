@@ -6,7 +6,55 @@ INVENTORY
 </name>
 </assembly>
 <members>
-<member name="F:INVENTORY.pgeMasterBarang.form1">
+<member name="F:INVENTORY.pgeMainMenu.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:INVENTORY.pgeLogin.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:INVENTORY.pgeLogin.txtUser">
+	<summary>
+txtUser control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:INVENTORY.pgeLogin.txtPass">
+	<summary>
+txtPass control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:INVENTORY.pgeLogin.btnLogin">
+	<summary>
+btnLogin control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:INVENTORY.pgeLogin.btnClear">
+	<summary>
+btnClear control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:INVENTORY.pgeMasterBarang.form1">
 	<summary>
 form1 control.
 </summary>
@@ -94,7 +142,7 @@ grdList control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:INVENTORY.pgeLogin.form1">
+</member><member name="F:INVENTORY.pgePengeluaranBarang.form1">
 	<summary>
 form1 control.
 </summary>
@@ -102,33 +150,73 @@ form1 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:INVENTORY.pgeLogin.txtUser">
+</member><member name="F:INVENTORY.pgePengeluaranBarang.txtNomor">
 	<summary>
-txtUser control.
+txtNomor control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:INVENTORY.pgeLogin.txtPass">
+</member><member name="F:INVENTORY.pgePengeluaranBarang.dtTglTrans">
 	<summary>
-txtPass control.
+dtTglTrans control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:INVENTORY.pgeLogin.btnLogin">
+</member><member name="F:INVENTORY.pgePengeluaranBarang.ddlBarang">
 	<summary>
-btnLogin control.
+ddlBarang control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:INVENTORY.pgeLogin.btnClear">
+</member><member name="F:INVENTORY.pgePengeluaranBarang.txtQty">
+	<summary>
+txtQty control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:INVENTORY.pgePengeluaranBarang.txtHarga">
+	<summary>
+txtHarga control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:INVENTORY.pgePengeluaranBarang.btnSave">
+	<summary>
+btnSave control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:INVENTORY.pgePengeluaranBarang.btnDelete">
+	<summary>
+btnDelete control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:INVENTORY.pgePengeluaranBarang.btnClear">
 	<summary>
 btnClear control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:INVENTORY.pgePengeluaranBarang.grdList">
+	<summary>
+grdList control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -207,94 +295,6 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member><member name="F:INVENTORY.pgePenerimaanBarang.grdList">
-	<summary>
-grdList control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:INVENTORY.pgeMainMenu.form1">
-	<summary>
-form1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:INVENTORY.pgePengeluaranBarang.form1">
-	<summary>
-form1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:INVENTORY.pgePengeluaranBarang.txtNomor">
-	<summary>
-txtNomor control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:INVENTORY.pgePengeluaranBarang.dtTglTrans">
-	<summary>
-dtTglTrans control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:INVENTORY.pgePengeluaranBarang.ddlBarang">
-	<summary>
-ddlBarang control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:INVENTORY.pgePengeluaranBarang.txtQty">
-	<summary>
-txtQty control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:INVENTORY.pgePengeluaranBarang.txtHarga">
-	<summary>
-txtHarga control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:INVENTORY.pgePengeluaranBarang.btnSave">
-	<summary>
-btnSave control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:INVENTORY.pgePengeluaranBarang.btnDelete">
-	<summary>
-btnDelete control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:INVENTORY.pgePengeluaranBarang.btnClear">
-	<summary>
-btnClear control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:INVENTORY.pgePengeluaranBarang.grdList">
 	<summary>
 grdList control.
 </summary>

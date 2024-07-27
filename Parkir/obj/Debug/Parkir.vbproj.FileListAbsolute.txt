@@ -7,3 +7,12 @@ C:\Dev\Projects\Kampus\kisahtegar_vb\Parkir\obj\Debug\Parkir.vbproj.GenerateReso
 C:\Dev\Projects\Kampus\kisahtegar_vb\Parkir\obj\Debug\Parkir.dll
 C:\Dev\Projects\Kampus\kisahtegar_vb\Parkir\obj\Debug\Parkir.xml
 C:\Dev\Projects\Kampus\kisahtegar_vb\Parkir\obj\Debug\Parkir.pdb
+C:\Dev\Projects\UnipiLabs\Parkir\bin\Parkir.dll
+C:\Dev\Projects\UnipiLabs\Parkir\bin\Parkir.pdb
+C:\Dev\Projects\UnipiLabs\Parkir\bin\Parkir.xml
+C:\Dev\Projects\UnipiLabs\Parkir\obj\Debug\ResolveAssemblyReference.cache
+C:\Dev\Projects\UnipiLabs\Parkir\obj\Debug\Parkir.Resources.resources
+C:\Dev\Projects\UnipiLabs\Parkir\obj\Debug\Parkir.vbproj.GenerateResource.Cache
+C:\Dev\Projects\UnipiLabs\Parkir\obj\Debug\Parkir.dll
+C:\Dev\Projects\UnipiLabs\Parkir\obj\Debug\Parkir.xml
+C:\Dev\Projects\UnipiLabs\Parkir\obj\Debug\Parkir.pdb

@@ -8,6 +8,7 @@ Partial Public Class pgePenerimaanBarang
     Private objDataTable As DataTable
     Private objReader As OleDbDataReader
     Private objAdapter As OleDbDataAdapter
+    Private objReaderExists As OleDbDataReader
     Private objDataset As DataSet
     Private myCon As OleDbConnection
     Private objCommand As OleDbCommand
@@ -23,7 +24,7 @@ Partial Public Class pgePenerimaanBarang
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         Try
-            strCon = "Provider=Microsoft.Jet.OLEDB.4.0; Data Source=C:\Dev\Projects\Kampus\kisahtegar_vb\INVENTORY\INVENTORY.mdb;"
+            strCon = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Dev\Projects\UnipiLabs\INVENTORY\INVENTORY.mdb;"
 
             If Not IsPostBack Then
                 Call PopulateBarang()
@@ -40,13 +41,13 @@ Partial Public Class pgePenerimaanBarang
             myCon = New OleDbConnection(strCon)
             objDataTable = New DataTable
             myCon.Open()
-            strSQL = "SELECT KD_BRG,NM_BRG,HRG_SAT FROM TBL_BARANG ORDER BY KD_BRG ASC"
+            strSQL = "SELECT KD_BRG,NM_BRG FROM TBL_BARANG ORDER BY KD_BRG ASC"
             objCommand = New OleDbCommand(strSQL, myCon)
             objReader = objCommand.ExecuteReader(CommandBehavior.Default)
             If objReader.HasRows Then
                 ddlBarang.Items.Add("")
                 While objReader.Read
-                    ddlBarang.Items.Add(objReader(0) & "-" & objReader(1) & "-" & objReader(2))
+                    ddlBarang.Items.Add(objReader("KD_BRG") & "-" & objReader("NM_BRG"))
                 End While
             End If
             objCommand.Dispose()
@@ -78,38 +79,61 @@ Partial Public Class pgePenerimaanBarang
 
                 myCon = New OleDbConnection(strCon)
                 myCon.Open()
-                strSQL = "INSERT INTO TBL_PENERIMAAN(NO_PENERIMAAN, TGL_TERIMA, KD_BRG, QTY) VALUES('" & txtNomor.Text & "', '" & dtTglTrans.SelectedDate & "', '" & strKodeBarang & "', " & txtQty.Text & ")"
+
+                strSQL = "SELECT * FROM TBL_PENERIMAAN WHERE NO_PENERIMAAN = '" & txtNomor.Text & "' AND KD_BRG = '" & strKodeBarang & "'"
                 objCommand = New OleDbCommand(strSQL, myCon)
+                objReaderExists = objCommand.ExecuteReader()
 
-                If objCommand.ExecuteNonQuery() Then
-                    strSQL = "SELECT * FROM TBL_STOCK WHERE KD_BRG = '" & strKodeBarang & "'"
+                If objReaderExists.HasRows Then
+                    objReaderExists.Close()
+                    ' Update
+                    strSQL = "UPDATE TBL_PENERIMAAN SET TGL_TERIMA = '" & dtTglTrans.SelectedDate & "', QTY = " & CInt(txtQty.Text) & " WHERE NO_PENERIMAAN = '" & txtNomor.Text & "' AND KD_BRG  = '" & strKodeBarang & "'"
                     objCommand = New OleDbCommand(strSQL, myCon)
-                    objReader = objCommand.ExecuteReader(CommandBehavior.Default)
 
-                    If objReader.HasRows Then
-                        objReader.Read()
-                        dblQtyIn = objReader("QTY_IN")
-                        dblQtyAkhir = objReader("QTY_AKHIR")
-                        dblQtyOut = objReader("QTY_OUT")
 
-                        dblQtyIn = dblQtyIn + CInt(txtQty.Text)
-                        dblQtyAkhir = dblQtyIn - dblQtyOut
+                    If objCommand.ExecuteNonQuery() Then
 
-                        strSQL = "UPDATE TBL_STOCK SET QTY_IN = " & dblQtyIn & ", QTY_AKHIR = " & dblQtyAkhir & " WHERE KD_BRG='" & strKodeBarang & "'"
-                        objCommand = New OleDbCommand(strSQL, myCon)
-                        objCommand.ExecuteNonQuery()
-                    Else
-                        strSQL = "INSERT INTO TBL_STOCK(KD_BRG, QTY_IN, QTY_OUT, QTY_AKHIR) VALUES('" & strKodeBarang & "', " & txtQty.Text & ", 0, " & txtQty.Text & ")"
-                        objCommand = New OleDbCommand(strSQL, myCon)
-                        objCommand.ExecuteNonQuery()
                     End If
-                    objReader.Close()
-                    MsgBox("DATA SUDAH DISIMPAN")
+
                 Else
-                    MsgBox("DATA TIDAK DAPAT DISIMPAN")
+                    objReaderExists.Close()
+                    ' Insert
+
+                    strSQL = "INSERT INTO TBL_PENERIMAAN(NO_PENERIMAAN, TGL_TERIMA, KD_BRG, QTY) VALUES('" & txtNomor.Text & "', '" & dtTglTrans.SelectedDate & "', '" & strKodeBarang & "', " & txtQty.Text & ")"
+                    objCommand = New OleDbCommand(strSQL, myCon)
+
+                    If objCommand.ExecuteNonQuery() Then
+                        strSQL = "SELECT * FROM TBL_STOCK WHERE KD_BRG = '" & strKodeBarang & "'"
+                        objCommand = New OleDbCommand(strSQL, myCon)
+                        objReader = objCommand.ExecuteReader(CommandBehavior.Default)
+
+                        If objReader.HasRows Then
+                            objReader.Read()
+                            dblQtyIn = objReader("QTY_IN")
+                            dblQtyAkhir = objReader("QTY_AKHIR")
+                            dblQtyOut = objReader("QTY_OUT")
+
+                            dblQtyIn = dblQtyIn + CInt(txtQty.Text)
+                            dblQtyAkhir = dblQtyIn - dblQtyOut
+
+                            strSQL = "UPDATE TBL_STOCK SET QTY_IN = " & dblQtyIn & ", QTY_AKHIR = " & dblQtyAkhir & " WHERE KD_BRG='" & strKodeBarang & "'"
+                            objCommand = New OleDbCommand(strSQL, myCon)
+                            objCommand.ExecuteNonQuery()
+                        Else
+                            strSQL = "INSERT INTO TBL_STOCK(KD_BRG, QTY_IN, QTY_OUT, QTY_AKHIR) VALUES('" & strKodeBarang & "', " & txtQty.Text & ", 0, " & txtQty.Text & ")"
+                            objCommand = New OleDbCommand(strSQL, myCon)
+                            objCommand.ExecuteNonQuery()
+                        End If
+                        objReader.Close()
+                        MsgBox("DATA SUDAH DISIMPAN")
+                    Else
+                        MsgBox("DATA TIDAK DAPAT DISIMPAN")
+                    End If
+
                 End If
 
-                MsgBox("Data Sudah Disimpan!")
+                
+
                 Call ListGrid()
                 myCon.Close()
                 objCommand = Nothing
@@ -134,6 +158,18 @@ Partial Public Class pgePenerimaanBarang
             grdList.DataBind()
 
             myCon.Close()
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+    End Sub
+
+    Private Sub grdList_SelectedIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles grdList.SelectedIndexChanged
+        Try
+            txtNomor.Text = Trim(grdList.SelectedRow.Cells(1).Text)
+            dtTglTrans.SelectedDate = CDate(grdList.SelectedRow.Cells(2).Text)
+            ddlBarang.Text = Trim(grdList.SelectedRow.Cells(3).Text) & "-" & Trim(grdList.SelectedRow.Cells(4).Text)
+            txtQty.Text = CDbl(grdList.SelectedRow.Cells(6).Text)
+            txtHarga.Text = CDbl(grdList.SelectedRow.Cells(7).Text)
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try

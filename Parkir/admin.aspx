@@ -61,7 +61,7 @@
                     <tr>
                         <td style="width:180px;">Full Name</td>
                         <td>
-                            <asp:TextBox ID="TextBox1" runat="server" Width="300px" />
+                            <asp:TextBox ID="txtFullName" runat="server" Width="300px" />
                         </td>
                     </tr>
                     
@@ -93,15 +93,15 @@
                             <asp:CommandField ControlStyle-ForeColor="Blue" HeaderText ="Select" ShowHeader="true" ShowSelectButton ="true" >
                                 <ControlStyle ForeColor ="Blue" />
                             </asp:CommandField>
-                            <asp:BoundField DataField ="USERNAME" HeaderText ="USERNAME" ItemStyle-Width ="40px" >
+                            <asp:BoundField DataField ="Username" HeaderText ="Username" ItemStyle-Width ="40px" >
                                 <HeaderStyle Wrap ="false" />
                                 <ItemStyle Wrap ="false" />
                             </asp:BoundField >
-                            <asp:BoundField DataField ="FULL_NAME" HeaderText ="NAMA" ItemStyle-Width ="250px" >
+                            <asp:BoundField DataField ="FullName" HeaderText ="Nama" ItemStyle-Width ="250px" >
                                 <HeaderStyle Wrap ="false" />
                                 <ItemStyle Wrap ="false" />
                             </asp:BoundField >
-                            <asp:BoundField DataField ="PASSWORD" HeaderText ="PASSWORD" ItemStyle-Width ="100px" >
+                            <asp:BoundField DataField ="Password" HeaderText ="Password" ItemStyle-Width ="100px" >
                                 <HeaderStyle Wrap ="false" />
                                 <ItemStyle Wrap ="false" />
                             </asp:BoundField >

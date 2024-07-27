@@ -44,3 +44,12 @@ C:\Dev\Projects\Kampus\kisahtegar_vb\INVENTORY\obj\Debug\INVENTORY.vbproj.Genera
 C:\Dev\Projects\Kampus\kisahtegar_vb\INVENTORY\obj\Debug\INVENTORY.dll
 C:\Dev\Projects\Kampus\kisahtegar_vb\INVENTORY\obj\Debug\INVENTORY.xml
 C:\Dev\Projects\Kampus\kisahtegar_vb\INVENTORY\obj\Debug\INVENTORY.pdb
+C:\Dev\Projects\UnipiLabs\INVENTORY\bin\INVENTORY.dll
+C:\Dev\Projects\UnipiLabs\INVENTORY\bin\INVENTORY.pdb
+C:\Dev\Projects\UnipiLabs\INVENTORY\bin\INVENTORY.xml
+C:\Dev\Projects\UnipiLabs\INVENTORY\obj\Debug\ResolveAssemblyReference.cache
+C:\Dev\Projects\UnipiLabs\INVENTORY\obj\Debug\INVENTORY.Resources.resources
+C:\Dev\Projects\UnipiLabs\INVENTORY\obj\Debug\INVENTORY.vbproj.GenerateResource.Cache
+C:\Dev\Projects\UnipiLabs\INVENTORY\obj\Debug\INVENTORY.dll
+C:\Dev\Projects\UnipiLabs\INVENTORY\obj\Debug\INVENTORY.xml
+C:\Dev\Projects\UnipiLabs\INVENTORY\obj\Debug\INVENTORY.pdb

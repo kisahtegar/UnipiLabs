@@ -34,13 +34,13 @@ Partial Public Class admin
     Protected WithEvents txtUsername As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''TextBox1 control.
+    '''txtFullName control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents TextBox1 As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents txtFullName As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''txtPassword control.

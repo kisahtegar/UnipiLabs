@@ -15,7 +15,7 @@ Partial Public Class pgeMasterBarang
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         Try
-            strCon = "Provider=Microsoft.Jet.OLEDB.4.0; Data Source=C:\Dev\Projects\Kampus\kisahtegar_vb\INVENTORY\INVENTORY.mdb;"
+            strCon = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Dev\Projects\UnipiLabs\INVENTORY\INVENTORY.mdb;"
 
             If Not IsPostBack Then
                 Call ListGrid()

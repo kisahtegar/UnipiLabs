@@ -23,4 +23,67 @@ Partial Public Class parking
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents form1 As Global.System.Web.UI.HtmlControls.HtmlForm
+
+    '''<summary>
+    '''txtNoKendaraan control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtNoKendaraan As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''dropJenisKendaraan control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents dropJenisKendaraan As Global.System.Web.UI.WebControls.DropDownList
+
+    '''<summary>
+    '''txtJamMasuk control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtJamMasuk As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''dtTanggalMasuk control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents dtTanggalMasuk As Global.SlimeeLibrary.DatePicker
+
+    '''<summary>
+    '''btnSimpan control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents btnSimpan As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''btnClear control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents btnClear As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''grdList control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents grdList As Global.System.Web.UI.WebControls.GridView
 End Class
