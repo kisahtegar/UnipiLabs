@@ -1,0 +1,117 @@
+package com.kisahtegar.gudangkisah;
+
+import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.Menu;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
+
+public class UpdateDataActivity extends Activity {
+	
+	private EditText id_barangEditText, namaEditText, jenisEditText, stockEditText;
+    private Button saveButton;
+    private String id_barang;
+
+	
+	@Override
+    protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_update_data);
+        
+        id_barangEditText = (EditText) findViewById(R.id.id_barang);
+        namaEditText = (EditText) findViewById(R.id.nama);
+        jenisEditText = (EditText) findViewById(R.id.jenis);
+        stockEditText = (EditText) findViewById(R.id.stock);
+        saveButton = (Button) findViewById(R.id.submit_button);
+
+        Intent intent = getIntent();
+        id_barang = intent.getStringExtra("id_barang");
+        id_barangEditText.setText(id_barang);
+        namaEditText.setText(intent.getStringExtra("nama"));
+        jenisEditText.setText(intent.getStringExtra("jenis"));
+        stockEditText.setText(intent.getStringExtra("stock"));
+
+        saveButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                updateData();
+            }
+        });
+        
+	}
+	
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.main, menu);
+		return true;
+	}
+
+	private void updateData() {
+		final String nama = namaEditText.getText().toString();
+        final String jenis = jenisEditText.getText().toString();
+        final String stock = stockEditText.getText().toString();
+        
+        new Thread(new Runnable() {
+
+			@Override
+			public void run() {
+				String urlString = "http://192.168.0.15:8081/gudangkisah/update.php";
+                try {
+                    URL url = new URL(urlString);
+                    HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+	                conn.setRequestMethod("POST");
+	                conn.setDoOutput(true);
+	                // Construct data to send
+	                String postData = "id_barang=" + id_barang +
+                            		  "&nama=" + nama +
+                            		  "&jenis=" + jenis +
+                            		  "&stock=" + stock;
+                    conn.getOutputStream().write(postData.getBytes("UTF-8"));
+
+                    BufferedReader reader = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+                    StringBuilder stringBuilder = new StringBuilder();
+                    String line;
+                    while ((line = reader.readLine()) != null) {
+                        stringBuilder.append(line);
+                    }
+                    reader.close();
+                    conn.disconnect();
+
+                    final String response = stringBuilder.toString();
+                    Log.d("UpdateDataActivity", "Response: " + response);
+
+                    runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
+                            // Handle response
+                            Intent intent = new Intent(UpdateDataActivity.this, MainActivity.class);
+                            startActivity(intent);
+                            finish();
+                        }
+                    });
+
+                } catch (Exception e) {
+                    Log.e("UpdateDataActivity", "Error: " + e.getMessage(), e);
+                    e.printStackTrace();
+					runOnUiThread(new Runnable() {
+						@Override
+						public void run() {
+							Toast.makeText(UpdateDataActivity.this, "Terjadi kesalahan $e", Toast.LENGTH_SHORT).show();
+						}
+					});
+                }
+			}
+		
+        }).start();
+	}
+}

@@ -1,0 +1,137 @@
+package com.kisahtegar.gudangkisah;
+
+import java.util.ArrayList;
+
+import android.os.Bundle;
+import android.os.Handler;
+import android.app.Activity;
+import android.content.Intent;
+import android.view.Menu;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.BaseAdapter;
+import android.widget.Button;
+import android.widget.LinearLayout;
+import android.widget.ListView;
+import android.widget.TextView;
+
+public class MainActivity extends Activity {
+	
+	private ListView listView;
+    private CustomAdapter adapter;
+    private ArrayList<String> barangList;
+    private Handler handler = new Handler();
+    private Button TambahButton;
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.main, menu);
+		return true;
+	}
+
+	private class CustomAdapter extends BaseAdapter {
+        private Activity context;
+        private ArrayList<String> items;
+
+        public CustomAdapter(Activity context, ArrayList<String> items) {
+            this.context = context;
+            this.items = items;
+        }
+
+        @Override
+        public int getCount() {
+            return items.size();
+        }
+
+        @Override
+        public Object getItem(int position) {
+            return items.get(position);
+        }
+
+        @Override
+        public long getItemId(int position) {
+            return position;
+        }
+
+        @Override
+        public View getView(final int position, View convertView, ViewGroup parent) {
+            if (convertView == null) {
+                // Create a new LinearLayout
+                LinearLayout layout = new LinearLayout(context);
+                layout.setOrientation(LinearLayout.HORIZONTAL);
+                layout.setPadding(8, 8, 8, 8);
+
+                // Create a TextView
+                TextView itemText = new TextView(context);
+                LinearLayout.LayoutParams itemTextParams = new LinearLayout.LayoutParams(0, ViewGroup.LayoutParams.WRAP_CONTENT, 1);
+                itemText.setLayoutParams(itemTextParams);
+                itemText.setTextSize(16);
+                layout.addView(itemText);
+
+                // Create Ubah button
+                Button buttonUbah = new Button(context);
+                LinearLayout.LayoutParams buttonParams = new LinearLayout.LayoutParams(
+                        ViewGroup.LayoutParams.WRAP_CONTENT,
+                        ViewGroup.LayoutParams.WRAP_CONTENT
+                );
+                buttonParams.setMargins(8, 0, 8, 0); // Add some margins
+                buttonUbah.setLayoutParams(buttonParams);
+                buttonUbah.setText("Ubah");
+                buttonUbah.setTextSize(7); // Set text size smaller
+                layout.addView(buttonUbah);
+
+                // Create Hapus button
+                Button buttonHapus = new Button(context);
+                buttonHapus.setLayoutParams(buttonParams);
+                buttonHapus.setText("Hapus");
+                buttonHapus.setTextSize(7); // Set text size smaller
+                layout.addView(buttonHapus);
+
+                convertView = layout;
+            }
+
+            TextView itemText = (TextView) ((LinearLayout) convertView).getChildAt(0);
+            Button buttonUbah = (Button) ((LinearLayout) convertView).getChildAt(1);
+            Button buttonHapus = (Button) ((LinearLayout) convertView).getChildAt(2);
+
+            final String item = items.get(position);
+            itemText.setText(item);
+
+            buttonUbah.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    // Handle Ubah button click
+                    String id_barang = item.split("\n")[0].split(": ")[1];
+                    String nama = item.split("\n")[1].split(": ")[1];
+                    String jenis = item.split("\n")[2].split(": ")[1];
+                    String stock = item.split("\n")[3].split(": ")[1];
+
+                    Intent intent = new Intent(context, UpdateDataActivity.class);
+                    intent.putExtra("id_barang", id_barang);
+                    intent.putExtra("nama", nama);
+                    intent.putExtra("jenis", jenis);
+                    intent.putExtra("stock", stock);
+                    context.startActivity(intent);
+                }
+            });
+
+            buttonHapus.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    // Handle Hapus button click
+                    String id_produk = item.split("\n")[0].split(": ")[1];
+                    deleteData(id_produk, position);
+                }
+            });
+
+            return convertView;
+        }
+    }
+}

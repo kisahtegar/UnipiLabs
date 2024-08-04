@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GudangKisah</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string name="tambah_data">Tambah Data</string>
+    <string name="id_produk">Id Barang</string>
+    <string name="nama">Nama</string>
+    <string name="jenis">Jenis</string>
+    <string name="harga">Harga</string>
+    <string name="persediaan">Persediaan</string>
+    <string name="submit">Submit</string>
+</resources>
